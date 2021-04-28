@@ -1,0 +1,32 @@
+.space {
+    background-position: center;
+    background-image: url("space.png");
+    max-width: 50%;
+    left: 25%;
+    position: relative;
+}
+
+body {
+    background: black;
+}
+
+.planet-area {
+    overflow: hidden;
+}
+
+.planet{
+    position: relative;
+    left: -2%;
+    bottom: -20px;
+    width: 300px;
+    padding-top: 64%;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 140px;
+    left: 120px;
+    width: 100px;
+    height: auto;
+    transform: rotate(20deg);
+}
