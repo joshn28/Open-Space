@@ -20,13 +20,49 @@ body {
     bottom: -20px;
     width: 300px;
     padding-top: 64%;
+    z-index: 1;
 }
 
 .rocket {
     position: absolute;
     bottom: 140px;
-    left: 120px;
+    left: 130px;
     width: 100px;
     height: auto;
     transform: rotate(20deg);
+}
+
+.control-panel {
+    display: flex;
+    background: gray;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    right: 40px;
+    top: 500px;
+}
+
+.check-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#panel {
+    float: left;
+    width: 90%;
+}
+
+#panel-button {
+    width: 10%;
+    margin-right: 5px;
+}
+
+.security {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#range1 {
+    transform: rotate(90deg);
 }
