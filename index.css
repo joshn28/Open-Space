@@ -33,16 +33,16 @@ body {
 }
 
 .control-panel {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     display: flex;
-    background: gray;
     flex-direction: column;
     width: 50%;
     position: absolute;
     right: 40px;
     top: 500px;
     border-radius: 2px;
+    border: 0.5rem outset dimgrey;
+    background: repeating-linear-gradient(-45deg, yellow, yellow 5px, black 5px, black 10px);
 }
 
 .check-buttons {
@@ -69,7 +69,30 @@ body {
     width: 15%;
 }
 
-#password {
-    width: 33%;
+#launch-button {
+    border-radius: 50%;
+    background-color: red;
+    border: solid 2px white;
+    color: white;
     margin-bottom: 10px;
+}
+
+#password {
+    margin-top: 10px;
+    width: 33%;
+    border: solid 2px yellow;
+    margin-bottom: 10px;
+}
+
+.control-panel__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+#ok-button {
+    width: 10%;
+    border-radius: 5px;
+    background-color: yellow;
 }
