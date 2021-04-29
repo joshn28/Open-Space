@@ -8,24 +8,26 @@
 <body>
     <div class="space">
         <div class="control-panel">
-            <input type="password" id="password" placeholder="Enter password to unlock">
-            <input type="button" value="ok">
-            <div class="check-buttons">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+            <div class="control-panel__inner">
+                <input type="password" id="password" placeholder="Enter password to unlock">
+                <input type="button" value="OK" id="ok-button">
+                <div class="check-buttons">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                </div>
+                <div class="levers">
+                    <input type="range" class="ranges">
+                    <input type="range" class="ranges">
+                    <input type="range" class="ranges">
+                    <input type="range" class="ranges">
+                    <input type="range" class="ranges">
+                </div>
+                <input type="button" value="Launch" id="launch-button">
             </div>
-            <div class="levers">
-                <input type="range" class="ranges">
-                <input type="range" class="ranges">
-                <input type="range" class="ranges">
-                <input type="range" class="ranges">
-                <input type="range" class="ranges">
-            </div>
-            <input type="button" value="Launch">
         </div>
         <div class="planet-area">
             <img class="planet" src="mars.png" alt="Planet mars">
