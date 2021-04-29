@@ -23,6 +23,19 @@ window.addEventListener('load', function() {
     })
 })
 
+function launching() {
+    let y = document.getElementsByClassName("rocket")[0].offsetTop;
+    let x = document.getElementsByClassName("rocket")[0].offsetLeft;
+    if(y < 1300){y= y - 50;
+        document.getElementsByClassName("rocket")[0].style.top= y + "px"; // vertical movement
+    }
+    if(x < 900){x= x + 50;
+        document.getElementsByClassName("rocket")[0].style.left= x + "px";//horizontal move
+    } else {
+        clearInterval(window.moving);
+    }
+}
+
 function check_maximum() {
     let i = 2;
     console.log("Checking if checkboxes are checked and all input ranges are set to maximum");
