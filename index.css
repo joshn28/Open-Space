@@ -29,14 +29,14 @@ body {
     left: 130px;
     width: 100px;
     height: auto;
-    transform: rotate(20deg);
+    transform: rotate(35deg);
 }
 
 .control-panel {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     position: absolute;
     right: 40px;
     top: 500px;
@@ -71,15 +71,19 @@ body {
 
 #launch-button {
     border-radius: 50%;
-    background-color: red;
+    background: darkred;
     border: solid 2px white;
     color: white;
     margin-bottom: 10px;
 }
 
+#launch-button:enabled {
+    background: red;
+}
+
 #password {
     margin-top: 10px;
-    width: 33%;
+    width: 40%;
     border: solid 2px yellow;
     margin-bottom: 10px;
 }
